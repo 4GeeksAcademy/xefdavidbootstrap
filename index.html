@@ -4,162 +4,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
- <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="col-1"></div>
-    <div class="d-flex">
-      <i class="fa-brands fa-instagram"> Instagram</i>
-    </div>
-    <div class="col-7"></div>
-    <!--start modal button-->
-    <div class="d-end">
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-        Create a New Post
-      </button>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Caption:
-            </div>
-            <div class="modal-footer">
-              <div class="modal-body">
-                <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
-                  data-content="Popover body content is set in this attribute."><i class="fa-solid fa-camera"></i></a>
-                <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
-                  data-content="Popover body content is set in this attribute."><i
-                    class="fa-solid fa-location-dot"></i></i></a>
-                <hr>
-                <h5>Tooltips in a modal</h5>
-                <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test"
-                    title="Tooltip">that link</a> have tooltips on hover.</p>
+  <div class="container-fluid " style="padding: 0%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="col-1"></div>     
+        <i class="fa-brands fa-instagram"> Instagram</i>      
+      <div class="col-7"></div>
+      <!--start modal button-->
+      <div class="d-end">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+          Create a New Post
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-body">
+                  <strong>Caption:</strong>
+                </div>
+                <div class="form-group ml-2 mr-2">                
+                  <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                </div>              
+                <div class="modal-body">
+                  <a href="#" role="button" class="btn btn-secondary popover-test mb-5" title="Popover title"
+                    data-content="Popover body content is set in this attribute.">
+                    <i class="fa-solid fa-camera"></i></a>
+                  <a href="#" role="button" class="btn btn-secondary popover-test mb-5" title="Popover title"
+                    data-content="Popover body content is set in this attribute.">
+                    <i class="fa-solid fa-location-dot"></i></a>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>          
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-1">
-      <!--star grey button-->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fa-solid fa-gear"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Profile</a>
-          <a class="dropdown-item" href="#">Accesibility</a>
-          <a class="dropdown-item" href="#">Privacy and data</a>
-          <a class="dropdown-item text-danger" href="#">Log out</a>
+      <div class="col-1">
+        <!--star grey button-->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Accesibility</a>
+            <a class="dropdown-item" href="#">Privacy and data</a>
+            <a class="dropdown-item text-danger" href="#">Log out</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
     <!--start nav images-->
-    
+
     <nav>
       <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-duotone fa-square"></i></button>
-        <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-list"></i></button>
+        <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-duotone fa-square"></i></button>
+        <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-list"></i></button>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-       
+
         <!--start scroll-->
 
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Auroras Boreales!</em></h5>
-            <img src="https://cdn.pixabay.com/photo/2020/09/24/17/59/aurora-borealis-5599375_1280.jpg" class="card-img-top" alt="...">           
-            <div class="card-body">             
-              <h6 class="card-title">25478 likes</h6>              
-              <p class="card-text font-italic">Toda aurora, comienza con esta estela blanca que ves aquí.</p>              
+            <img src="https://cdn.pixabay.com/photo/2020/09/24/17/59/aurora-borealis-5599375_1280.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">25478 likes</h6>
+              <p class="card-text font-italic">Toda aurora, comienza con esta estela blanca que ves aquí.</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Agua!</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/06_6.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/06_6.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">29678 likes</h6>
-              <p class="card-text font-italic">Cada paseo por Islandia, es un paisaje de cascadas salvajes.</p>              
+              <p class="card-text font-italic">Cada paseo por Islandia, es un paisaje de cascadas salvajes.</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Hielo</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/13_3.webp?w=733&h=489" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/13_3.webp?w=733&h=489"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">2638 likes</h6>
-              <p class="card-text font-italic">La sensación de pasear por un glaciar es inexplicable.</p>              
+              <p class="card-text font-italic">La sensación de pasear por un glaciar es inexplicable.</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Las luces del norte</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/17_3.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/17_3.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">9838 likes</h6>
-              <p class="card-text font-italic">Vivir el baile de luces sobre tu cabeza, no se puede explicar.</p>              
+              <p class="card-text font-italic">Vivir el baile de luces sobre tu cabeza, no se puede explicar.</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Tierra de fuego</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/25_2.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/25_2.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">96838 likes</h6>
-              <p class="card-text font-italic">La isla no solo es hielo, tambien es Fuego!!</p>              
+              <p class="card-text font-italic">La isla no solo es hielo, tambien es Fuego!!</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Isla de contrastes</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/31_1.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/31_1.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">6838 likes</h6>
-              <p class="card-text font-italic">Cada día en Islandia, es un cambio continuo de paisaje.</p>              
+              <p class="card-text font-italic">Cada día en Islandia, es un cambio continuo de paisaje.</p>
             </div>
-          </div>         
-        </div>        
+          </div>
+        </div>
         <div class="d-flex justify-content-center mt-2">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Cascadas inmensas!</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/24_2.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/24_2.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">12838 likes</h6>
-              <p class="card-text font-italic">Sentarte a ver la belleza natural , es un must, de Islandia</p>              
+              <p class="card-text font-italic">Sentarte a ver la belleza natural , es un must, de Islandia</p>
             </div>
-          </div>         
+          </div>
         </div>
         <div class="d-flex justify-content-center mt-2 mb-3">
           <div class="card border-dark bg-light" style="width: 18rem;">
             <h5>&nbsp;&nbsp;<em>Ven a Islandia!</em></h5>
-            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/23_2.webp?w=733&h=488" class="card-img-top" alt="...">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/23_2.webp?w=733&h=488"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h6 class="card-title">82838 likes</h6>
-              <p class="card-text font-italic">Si vienes..no podrás olvidarte de tu viaje, jamás!!</p>              
+              <p class="card-text font-italic">Si vienes..no podrás olvidarte de tu viaje, jamás!!</p>
             </div>
-          </div>         
+          </div>
         </div>
       </div>
 
@@ -168,46 +178,53 @@
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="container mb-4 mt-4">
           <div class="row">
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://cdn.pixabay.com/photo/2020/09/24/17/59/aurora-borealis-5599375_1280.jpg"
-                alt="galeria" class="img-thumbnail" alt="...">
+            <div class="card-group" style="margin: 0 auto;">
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://cdn.pixabay.com/photo/2020/09/24/17/59/aurora-borealis-5599375_1280.jpg" alt="galeria"
+                  class="img-thumbnail" alt="..." style="width: 350px;object-fit: cover;height: 100%;">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/23_2.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/06_6.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
             </div>
-            <div class="col-4" style="width: 350px; height: 350px !important">
-              <img src="https://hips.hearstapps.com/hmg-prod/images/piscina-alargada-paisaje-1531651701.jpg"
-                alt="galeria" class="rounded img-fluid" style="width: 100%;object-fit: cover;height: 100%;" alt="...">
+            <div class="card-group" style="margin: 0 auto;">
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/13_3.webp?w=733&h=489"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/17_3.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/25_2.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
             </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/06_6.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
+            <div class="card-group" style="margin: 0 auto;">
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/31_1.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/24_2.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
+              <div class="card" style="width: 300px; height: 300px">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/23_2.webp?w=733&h=488"
+                  alt="galeria" class="img-thumbnail" style="width: 300px; object-fit: cover;height: 100%;" alt="...">
+              </div>
             </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/13_3.webp?w=733&h=489"
-                alt="galeria" class="img-thumbnail">
-            </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/17_3.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
-            </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/25_2.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
-            </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/31_1.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
-            </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/24_2.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
-            </div>
-            <div class="col-4" style="width: 350px; height: 350px">
-              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/23_2.webp?w=733&h=488"
-                alt="galeria" class="img-thumbnail">
-            </div>
+
           </div>
-        </div>
       </div>
     </div>
+  </div>
 
 
 
